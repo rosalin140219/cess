@@ -43,9 +43,9 @@ function install_node() {
 	fi
 
 	# 安装cess节点
-	wget https://github.com/CESSProject/cess-nodeadm/archive/v0.5.5.tar.gz
-	tar -xvzf v0.5.5.tar.gz
-	cd cess-nodeadm-0.5.5/ && ./install.sh
+	wget https://github.com/CESSProject/cess-nodeadm/archive/v0.5.6.tar.gz
+	tar -xvzf v0.5.6.tar.gz
+	cd cess-nodeadm-0.5.6/ && ./install.sh
 
 }
 
@@ -105,8 +105,8 @@ function main_menu() {
     4) check_cess_chain_sync_status ;;
     5) view_storage_node_log ;;
     6) view_bucket_status ;;
- 	7) stop_and_remove_services ;;
-    *) echo "无效选项。" ;;
+    7) stop_and_remove_services ;;
+   *) echo "无效选项。"; main_menu;;
     esac
 }
 
